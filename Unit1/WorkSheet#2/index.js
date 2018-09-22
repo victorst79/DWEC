@@ -1,5 +1,5 @@
 // WS#2 --> 3,4,1
-document.write("<h1>WhorkSheet#2</h1>");
+document.write("<h1>WorkSheet#2</h1>");
 document.write("<h3>Exercise 3</h3>");
 var radius = 5;
 document.write("El radio del circulo es : " + radius);
@@ -25,7 +25,7 @@ var c = ((f-32)/1.8000);
 document.write(f + "F to Celsius = " + c);
 document.write("<br>");
 
-document.write("<h1>WhorkSheet#2 OPTIONALS</h1>");
+document.write("<h1>WorkSheet#2 OPTIONALS</h1>");
 document.write("<h3>Exercise 1</h3>");
 var age = 2018;
 var friend_age = 1992;
