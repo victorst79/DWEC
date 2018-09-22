@@ -1,5 +1,5 @@
 // WS#1 --> 4
-document.write("<h1>WhorkSheet#1</h1>");
+document.write("<h1>WorkSheet#1</h1>");
 var a = 5;
 document.write("El valor de la primera variable es " + a);
 document.write("<br>");
