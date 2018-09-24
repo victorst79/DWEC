@@ -61,7 +61,7 @@ function calculateSupplyBonus(age,amount_per_day){
     document.write("<br>");
     document.write("Amount per day: " + amount_per_day);
     document.write("<br>");
-    document.write("You will need "+ ((life_expectancy-age)*amount_per_day).toFixed(0) +" to last you until the ripe old age of " + life_expectancy);
+    document.write("You will need "+ Math.round((life_expectancy-age)*amount_per_day) +" to last you until the ripe old age of " + life_expectancy);
     document.write("<br><br>");
 }
 
