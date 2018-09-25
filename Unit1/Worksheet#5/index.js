@@ -150,20 +150,27 @@ document.write("</table>");
 document.write("<h3>Exercise 19</h3>");
 
 var wah = prompt("Width and Height");
-var aux = 1;
 
-document.write("<table border='1px solid black' cellspading='2' bgcolor='black'>");
-for(let i = 0; i <= 8;i++){
-    document.write("<tr height='"+ wah +"' bgcolor='white'>");
-    for(let j = 0; j <= 8;j++){
-        if(aux == 1){
-            document.write("<td width='"+ wah +"' bgcolor='white'>");
-            aux = 0;
-        }else{
-            document.write("<td width='"+ wah +"' bgcolor='black'>");
-            aux = 1;
+document.write('<table border="0" cellspading="2" bgcolor="black">');
+for(var i=1; i<=8; i++){
+    document.write('<tr bgcolor="white" height="'+wah+'">');
+    if(i%2!=0){
+        for(var j=1; j<=8; j++){
+            if(j%2!=0){
+                document.write('<td width="'+wah+'" bgcolor="black">&nbsp;</td>');
+            }else{
+                document.write('<td width="'+wah+'" bgcolor="white">&nbsp;</td>');
+            }
+        }
+    }else{
+        for(var z=1; z<=8; z++){
+            if(z%2==0){
+                document.write('<td width="'+wah+'" bgcolor="black">&nbsp;</td>');
+            }else{
+                document.write('<td width="'+wah+'" bgcolor="white">&nbsp;</td>');
+            }
         }
     }
-    document.write("</tr>");
+    document.write('</tr>');
 }
-document.write("</table>");
+document.write('</table>');
