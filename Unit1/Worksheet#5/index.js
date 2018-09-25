@@ -74,17 +74,17 @@ document.write("</table>");
 
 document.write("<h3>Exercise 15</h3>");
 
-var num_adivinar = prompt("Number to guess");
-var num = prompt("Number");
+var num_adivinar = parseInt(prompt("Number to guess"));
+var num = parseInt(prompt("Number"));
 
 if(num_adivinar != num){
     while(num_adivinar != num){
         if(num < num_adivinar){
             alert("Try again, the number you are looking for is greater.");
-            num = prompt("Number");
+            num = parseInt(prompt("Number"));
         }else if(num > num_adivinar){
             alert("Try again, the number you are looking for is less.");
-            num = prompt("Number");
+            num = parseInt(prompt("Number"));
         }
     }
 }else{
@@ -94,17 +94,17 @@ if(num_adivinar != num){
 
 document.write("<h3>Exercise 16</h3>");
 
-var num_adivinar2 = prompt("Number to guess");
-var num2 = prompt("Number");
+var num_adivinar2 = parseInt(prompt("Number to guess"));
+var num2 = parseInt(prompt("Number"));
 
 if(num_adivinar2 != num2){
     do{
         if(num2 < num_adivinar2){
-            alert("Try again, the number you are looking for is greater.");
-            num2 = prompt("Number");
+            alert("Try again, the number you are looking for is greter.");
+            num2 = parseInt(prompt("Number"));
         }else if(num2 > num_adivinar2){
             alert("Try again, the number you are looking for is less.");
-            num2 = prompt("Number");
+            num2 = parseInt(prompt("Number"));
         }
     }while(num_adivinar2 != num2);
 }else{
