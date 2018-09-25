@@ -85,5 +85,42 @@ mathematics ("The sum is: ....").
 
 ## Worksheet#4
 
-- 10- 
+- 1- What number's bigger?
+
+    - Write a function named `greaterNum` that:
+        - Takes 2 arguments, both numbers.
+        returns whichever number is the greater (higher) number.
+    - Call that function 2 times with different number pairs, and log the output to make sure it works (e.g. "The greater number of 5 and 10 is 10.").
+
+- 2- The World Translator
+
+    - Write a function named `helloWorld` that:
+        - Takes 1 argument, a language code (e.g. "es", "de", "en")
+        returns "Hello, World" for the given language, for atleast 3 languages. It should default to returning English.
+    - Call that function for each of the supported languages and log the result to make sure it works.
+
+## Worksheet#5
+
+- 10- Write a program that shows the phrase "Header h" followed by the number.
+The phrases must be formatted with the appropriate labels
+
+- 11- Make a program that asks for keyboard three values: the number of columns of a table and, the height and width (in pixels) of its cells. Once typed these values, the program will paint on the web page a table HTML of a row by the number of columns typed.
+
+- 12- Modify the previous exercise so that the odd columns have a black background and couple white background.
+
+- 13- Adapt Exercise 11 using a `while` loop instead of a `for` loop.
+
+- 14- Adapt Exercise 4.12 using a `while` loop instead of a `for` loop.
+
+- 15- Write a program in JavaScript that consists of guessing a number previously introduced by keyboard (player 1). The program will ask for as many numbers as erroneous attempts make the player 2. It will only end when player 2 hits. The program will give clues to player 2 indicating if his number is greater or less than the number to guess.
+
+- 16- Adapt exercise 4.15. to the loop `do...while`.
+
+- 17- Make a program in JavaScript using two nested `for` loops to print on the screen all the multiplication tables.
+
+- 18- Make a program that asks for keyboard four values: the number of columns and rows of a table and, the height and width (in pixels) of their cells. Once these values are typed, the program will paint on the web page an HTML table of the number of rows by the number of columns typed.
+
+- 19- Make a program that will paint a chess board of 8x8 squares using two for nested. The program will only ask for the width of the cell that will be the same as the height.
+
+
 
