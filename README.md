@@ -122,5 +122,55 @@ The phrases must be formatted with the appropriate labels
 
 - 19- Make a program that will paint a chess board of 8x8 squares using two for nested. The program will only ask for the width of the cell that will be the same as the height.
 
+## Worksheet#5
 
+- 1- Write a function that can take in any number of arguments, and returns the sum of all of the arguments.
 
+- 2- Write a function called `addOnlyNums` that can take in any number of arguments (including numbers or strings), and returns the sum of only the numbers.
+
+- 3- Write a function called `countTheArgs` that can take any number of arguments, and returns the number of arguments that are passed in.
+
+- 4- Write a function called `combineTwoArrays` that takes in two arrays as arguments, and returns a single array that combines both (using the spread operator).
+
+- 5- Write a function called `sumEveryOther` that takes in any amount of arguments, and returns the sum of every other argument.
+
+```javascript
+sumEveryOther(5, 6, 3, 4, 1); //9
+sumEveryOther(10, 2, 11); //21
+```
+- 6- Write a function called `onlyUniques` that can take in any number of arguments, and returns an array of only the unique arguments.
+
+- 7- Write a function called `onlyUniques` that can take in any number of arguments, and returns an array of only the unique arguments.
+
+```javascript
+onlyUniques('cat', 'cat', 'dog', 'pig'); //['cat', 'dog', 'pig']
+onlyUniques(1, 4, 7, 1, 2, 7, 4); //[1, 4, 7, 2]
+```
+
+- 8- Write a function called `combineAllArrays` that takes in any number of arrays as arguments and combines all of them into one array.
+
+- 9- Write a function called `squareAndSum` that takes in any number of arguments, squares them, then sums all of the squares.
+
+```javascript
+sumAndSquare(2, 4, 3); //29
+sumAndSquare(1, 2); //5
+```
+
+# Unit 2
+
+### Worksheet#1
+
+- 1- Make a page that creates an object of type `Date` and show on the page the following information (each line):
+    - The current year.
+    - The current month.
+    - The current day.
+    - The current minutes.
+    - The current seconds.
+
+- 2- Create a web page that shows the result of each of the following sections
+    - Create variable `fechaHoy` with today's date.
+    - Create a variable `fecha85` that adds 85 days to the variable `fechaHoy`.
+    - Create variable `fecha187` that subtracts 187 days as variable `fechaHoy`.
+    - Add 2 years to the variable `fecha85`.
+    - Subtract 24 hours from the variable `fecha187`.
+    - Create variable `fechaResto` that is the subtraction of `fecha85` - `fecha187` and see what you get.
