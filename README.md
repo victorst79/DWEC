@@ -122,7 +122,7 @@ The phrases must be formatted with the appropriate labels
 
 - 19- Make a program that will paint a chess board of 8x8 squares using two for nested. The program will only ask for the width of the cell that will be the same as the height.
 
-## Worksheet#5
+## Worksheet#6
 
 - 1- Write a function that can take in any number of arguments, and returns the sum of all of the arguments.
 
