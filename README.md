@@ -180,3 +180,17 @@ sumAndSquare(1, 2); //5
 - 4- Using the previous program, when you reach 0, google loads, for this you can use the `location` object.
 
 - 5- Using the `Date` object, its `getHours`, `getMinutes` and `GetSeconds` methods and the `setTimeout()` method create a clock that is updated every second.
+
+## Worksheet#2
+
+- 1- Create a page that shows:
+    - A random number between 0 and 1.
+    - The same but between 100 and 200.
+    - It asks for two values from the user and 
+    generates a random number between these two values.
+
+- 5- Create a website to solve second degree quations. You should therefore ask for the coefficients and show the possible solutions.
+
+- 7- Create a website that generates a table with two columns. In the first one an ascending number and in the other the value of its sine.
+
+- 8- Create a website in which each time an image is displayed (randomly) among 3 possible.
