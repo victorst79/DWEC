@@ -174,3 +174,9 @@ sumAndSquare(1, 2); //5
     - Add 2 years to the variable `fecha85`.
     - Subtract 24 hours from the variable `fecha187`.
     - Create variable `fechaResto` that is the subtraction of `fecha85` - `fecha187` and see what you get.
+
+- 3- Using `setTimeout()`, I created a counter to within 60 seconds.
+
+- 4- Using the previous program, when you reach 0, google loads, for this you can use the `location` object.
+
+- 5- Using the `Date` object, its `getHours`, `getMinutes` and `GetSeconds` methods and the `setTimeout()` method create a clock that is updated every second.
