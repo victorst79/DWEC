@@ -24,11 +24,98 @@ document.write("<h4>C)</h4>");
 
 function encuentraPalabraMasLarga(cad_arg){
     var arr = cad_arg.split(" ");
-    console.log(arr);
+    var auxArr = 0;
+    var big = 0;
 
-    for(){
-        
+    for(let i = 0; i <= arr.length-1; i++){
+        if(arr[i].length > auxArr){
+            auxArr = arr[i].length;
+            big = i;
+        }
+    }
+    document.write(arr[big]);
+}
+
+encuentraPalabraMasLarga("Hello world , where is my dinner ?");
+
+document.write("<h4>D)</h4>");
+
+function fltraPalabrasMasLargas(cad_arg, i){
+    var arr = cad_arg.split(" ");
+    for(let j = 0; j <= arr.length-1; j++){
+        if(arr[j].length > i){
+            document.write(arr[j]+" ");
+        }
     }
 }
 
-encuentraPalabraMasLarga("Hello world, where is my dinner ?");
+fltraPalabrasMasLargas("Hello world , where is my dinner ?",2);
+
+document.write("<h4>E)</h4>");
+
+function cadenaBienFormada(cad_arg){
+    var arr = cad_arg;
+    for(let i = 0; i <= arr.length-1; i++){
+        if(i == 0){
+            document.write(arr[i].toUpperCase());   
+        }else{
+            document.write(arr[i]);
+        }
+    }
+}
+
+cadenaBienFormada("hello world");
+
+document.write("<h3>Exercise 2</h3>");
+
+function upper(character){
+    if(character == character.toUpperCase()){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+function lower(character){
+    if(character == character.toLowerCase()){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+function textInformation(cad_arg){
+    var auxUpper = 0;
+    var auxLower = 0;
+    for(let i = 0; i <= cad_arg.length-1; i++){
+        var characterAux = cad_arg[i];
+        if(upper(characterAux) == true){
+            auxUpper++;
+        }else if(lower(characterAux) == true){
+            auxLower++;
+        }
+    }
+    if(auxUpper >= 1 && auxLower == 0){
+        document.write("Only Uppercase");
+    }else if(auxLower >= 1 && auxUpper == 0){
+        document.write("Only lowercase");
+    }else if(auxLower >= 1 && auxUpper >= 1){
+        document.write("Lower and Uppercase");
+    }else{
+        document.write("ERROR");
+    }
+}
+
+textInformation("AAAAAAAAAAAAHHHHHH");
+
+document.write("<h3>Exercise 7</h3>");
+// Desarrolla una funcion que tomando como entrada una cadena de texto nos devuelva si es o no un palindromo. 
+
+document.write("<h3>Exercise 9</h3>");
+// Escribir un procedimiento que lea una palabra y la escriba (formateada dentro de una tabla) como se ve en la figura: 
+//     Entrada: HOLA 
+//     Salida: 
+//     H O L A 
+//     O      L 
+//     L      O 
+//     A L O H 
