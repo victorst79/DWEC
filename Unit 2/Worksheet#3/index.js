@@ -4,13 +4,14 @@ document.write("<h3>Exercise 1</h3>");
 document.write("<h4>A)</h4>");
 
 /**
- * Recibe una cadena, la cual separa caracter a caracter.
- * Una vez hecho esto, se invierte el array y más tarde
- * se vuelven a unir todos los elementos para crear un
- * string inverso al inicial.
+ * Receives a string, which is splitted char by char, 
+ * getting an array.
+ * Once this is done, our array gets inverted by reverse()
+ * and later it becomes a string again. So the final result is
+ * cad_arg backwards.
  * 
- * Por ejemplo: Recibiendo "Hello world", la función
- * devolverá dlrow olleH
+ * Ex: Getting "Hello World", the function will return 
+ * "dlrow olleH"
  * @param {*} cad_arg 
  */
 function invierteCadena(cad_arg){
