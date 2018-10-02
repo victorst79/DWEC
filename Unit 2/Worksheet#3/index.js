@@ -3,6 +3,17 @@ document.write("<h1>Worksheet#3</h1>");
 document.write("<h3>Exercise 1</h3>");
 document.write("<h4>A)</h4>");
 
+/**
+ * Receives a string, which is splitted char by char, 
+ * getting an array.
+ * Once this is done, our array gets inverted by reverse()
+ * and later it becomes a string again. So the final result is
+ * cad_arg backwards.
+ * 
+ * Ex: Getting "Hello World", the function will return 
+ * "dlrow olleH"
+ * @param {*} cad_arg 
+ */
 function invierteCadena(cad_arg){
     document.write(cad_arg.split("").reverse().join("")+"<br>");
 }
@@ -22,6 +33,15 @@ inviertePalabras("Hello world, where is my dinner?");
 
 document.write("<h4>C)</h4>");
 
+/**
+ * Receives a string, which gets separated word by
+ * word. With a for loop it checks the length of each
+ * word and saves the longest one.
+ * 
+ * Once the loop is done, the function prints the longest
+ * word.
+ * @param {*} cad_arg 
+ */
 function encuentraPalabraMasLarga(cad_arg){
     var arr = cad_arg.split(" ");
     var auxArr = 0;
