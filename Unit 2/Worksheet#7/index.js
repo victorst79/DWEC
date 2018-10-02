@@ -4,19 +4,17 @@ var options = {
     maximumAge: 0
   };
 
-function success(pos){
-    var cordinates = pos.coords;
-    
+function success(position){
+    var cordinates = position.coords;
+    console.log(cordinates);
     console.log('Your current position is:');
-    console.log(`Latitude : ${crd.latitude}`);
-    console.log(`Longitude: ${crd.longitude}`);
-    console.log(`More or less ${crd.accuracy} meters.`);
+    console.log(`Latitude --> ${cordinates.latitude}`);
+    console.log(`Longitude --> ${cordinates.longitude}`);
+    console.log(`More or less ${cordinates.accuracy} meters.`);
 }
 
 function error(err) {
     console.warn(`ERROR(${err.code}): ${err.message}`);
 }
 
-var locat = navigator.geolocation.getCurrentPosition(success, error, [options]);
-
-console.log(locat); 
+var pos = navigator.geolocation.getCurrentPosition(success, error, [options]);

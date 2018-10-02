@@ -2,11 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Worksheet#7</title>
-    <script src="./index.js"></script>
+    <title>Worksheet#7</title>    
+    <style>
+        #map{
+            height: 400px;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
+    <h1>GOOGLE MAPS API EXAMPLE</h1>
     <div id="map"></div>
+    <script>
+        function initMap() {
+            var locat = {lat: 37.190893599999995, lng: -3.7181346};
+            var map = new google.maps.Map(document.getElementById('map'), {zoom: 20, center: locat});
+            var marker = new google.maps.Marker({position: locat, map: map});
+        }
+    </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkGI5PzAKHvKdBcW2MsLljqrZQCRFIko4&callback=initMap"></script>
+    <script src="./index.js"></script>
 </body>
 </html>
