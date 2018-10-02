@@ -3,6 +3,16 @@ document.write("<h1>Worksheet#3</h1>");
 document.write("<h3>Exercise 1</h3>");
 document.write("<h4>A)</h4>");
 
+/**
+ * Recibe una cadena, la cual separa caracter a caracter.
+ * Una vez hecho esto, se invierte el array y más tarde
+ * se vuelven a unir todos los elementos para crear un
+ * string inverso al inicial.
+ * 
+ * Por ejemplo: Recibiendo "Hello world", la función
+ * devolverá dlrow olleH
+ * @param {*} cad_arg 
+ */
 function invierteCadena(cad_arg){
     document.write(cad_arg.split("").reverse().join("")+"<br>");
 }
