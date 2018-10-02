@@ -33,6 +33,15 @@ inviertePalabras("Hello world, where is my dinner?");
 
 document.write("<h4>C)</h4>");
 
+/**
+ * Receives a string, which gets separated word by
+ * word. With a for loop it checks the length of each
+ * word and saves the longest one.
+ * 
+ * Once the loop is done, the function prints the longest
+ * word.
+ * @param {*} cad_arg 
+ */
 function encuentraPalabraMasLarga(cad_arg){
     var arr = cad_arg.split(" ");
     var auxArr = 0;
