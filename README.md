@@ -194,3 +194,56 @@ sumAndSquare(1, 2); //5
 - 7- Create a website that generates a table with two columns. In the first one an ascending number and in the other the value of its sine.
 
 - 8- Create a website in which each time an image is displayed (randomly) among 3 possible.
+
+## Worksheet#3
+
+- 1- Create the following functions and call them from an XHTML page to show how they work:
+    - a) `invierteCadena(cad_arg)`: returns a string given by the user inverted.
+    - b) `inviertePalabras(cad_arg)`: returns the words contained in the chain.
+    - c) `encuentraPalabraMasLarga(cad_arg)`: for a given string of characters. Returns the length of the long word contained in it
+    - d) `flitraPalabraMasLarga(cad_arg, i)`: for a string of characters and a numerical value (i), return the number of words whose length is greater than i.
+    - e) `cadenaBienFormada(cad_arg)`: correctly format the last string, so that only the first letter appears in capital letters and the rest in lower case.
+
+- 2- Define a function that displays information about a text string that is it happens as an argument. From the chain that is passed to you, the function determines if that chain is formed only by capital letters, only by lowercase or by a mixture of both.
+
+
+## Worksheet#4
+
+- 1- It shows, in an HTML table, all the information that you can extract using JavaScript from the client browser.
+
+- 2- Do the same for the information on the screen used by the client.
+
+## Worksheet#6
+
+- 1- Create a page that contains several links, images and example anchors and add a series of links that perform the following:
+    - a) Shows the number of anchors the document has.
+    - b) Show the text inside the tag of the first anchor (innerHTML).
+    - c) Shows the number of images of the document.
+    - d) Show the id of the first image
+    - e) Shows the number of links in the document.
+    - f) Change the title of the document.
+
+## Worksheet#7
+
+The geolocation API allows the user to provide their location to web applications if they so desire. For privacy reasons, the user is asked for permission to report location information.
+The geolocation API is published through the navigator.geolocation object. If the object exists, geolocation services are available.
+
+- Develop a web app in which:
+    - Test if geolocation is available.
+    - If it's available, show the current position (latitude and longitude)
+    - If it isn't available, show a message for each and everyone of the possible errors.
+    - Improve your code so you show the position continuously (although the user could be in moving, so it could change)
+    - Find the way to meassure the distance traveled.
+- Let's try to use the geolocation information with the API of Google Maps.
+    - Use a map to show your location
+    - Draw a marker in your location
+    - Find a way to know the address of your location (reverse geocoding).
+- OPTIONAL. Complete exercise 2 with these new features:
+    - Look for the way to animate your marker
+    - Draw the position of the user correctly although it could be moving.
+    - Draw the route of the user over the map.
+
+## Worksheet#8
+
+- Capture video through your webcam and show it on the web.
+- Do the same but now only for the audio.
