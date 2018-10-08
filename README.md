@@ -234,10 +234,12 @@ The geolocation API is published through the navigator.geolocation object. If th
     - If it isn't available, show a message for each and everyone of the possible errors.
     - Improve your code so you show the position continuously (although the user could be in moving, so it could change)
     - Find the way to meassure the distance traveled.
+
 - Let's try to use the geolocation information with the API of Google Maps.
     - Use a map to show your location
     - Draw a marker in your location
     - Find a way to know the address of your location (reverse geocoding).
+
 - OPTIONAL. Complete exercise 2 with these new features:
     - Look for the way to animate your marker
     - Draw the position of the user correctly although it could be moving.
@@ -246,4 +248,17 @@ The geolocation API is published through the navigator.geolocation object. If th
 ## Worksheet#8
 
 - Capture video through your webcam and show it on the web.
+
 - Do the same but now only for the audio.
+
+# Unit 3
+
+## Worksheet#1
+
+- 2- Create a website from which the launch of a 6-sided die is simulated. To do this, define a "launch" function that returns a random number between 1 and 6.
+
+- 3- To show that everyone should have a similar probability, improve the previous web so that a simulation of 6000 runs can be generated, showing at the end the number of occurrences of each of the values.
+
+- 6- Create a function to calculate powers in a recursive way.
+
+- 7- Create a function that calculates the factorial of a given number. To check this, design a website that shows the factorial for the values from 1 to 10.
