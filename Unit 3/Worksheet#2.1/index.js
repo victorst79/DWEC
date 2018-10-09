@@ -79,5 +79,45 @@ function wordsContainIs(arr){
 console.warn("e)");
 console.log(wordsContainIs(arrNaM2));
 
+
 document.write("<h3>f)</h3>");
 document.write("SEE RESULTS IN THE CONSOLE");
+
+function numbersDivisibleThree(arr){
+    var divisible = [];
+
+    for(let i = 0; i <= arr.length; i++){
+        if(arr[i] % 3 == 0){
+            divisible.push(arr[i]);
+        }
+    }
+    return divisible;
+}
+
+console.warn("f)");
+console.log(numbersDivisibleThree(arrNaM));
+
+
+document.write("<h3>g)</h3>");
+document.write("SEE RESULTS IN THE CONSOLE");
+
+function zipTwoArrays(arr1,arr2){
+    //obsolete
+    var result = arr1.concat(arr2);
+    return result;
+}
+
+console.warn("g)");
+console.log(zipTwoArrays(arrNaM,arrNaM2));
+
+
+document.write("<h3>h)</h3>");
+document.write("IN PROGRESS");
+
+function sortUnitedArray(arr1,arr2){
+    var newArray = zipTwoArrays(arr1,arr2);
+    return newArray.sort();
+}
+
+console.warn("h)");
+console.log(sortUnitedArray([5,6,8.7,20],arrNaM2));
