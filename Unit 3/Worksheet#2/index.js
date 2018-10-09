@@ -21,6 +21,7 @@ function paresImpares(){
             odd.push(arr[i]);
         }
     }
+
     console.warn("ARRAY");
     console.log(arr);
     console.warn("ODD");
@@ -34,6 +35,37 @@ document.write("See in the console");
 
 document.write("<h3>Exercise 7</h3>");
 
-function arrModify(){
+var arrTest = [1,2,3,4,5,6,7,8,9,10];
+var arrTest2 = [1,2,3,4,5,6,7,8,9,10,"Hola",true];
 
+function allValue0(arr){    
+    for(let i = 0; i <= arr.length-1; i++){
+        arr[i] = 0;
+    }
+    return arr;
 }
+
+function add1(arr){
+    for(let i = 0; i <= arr.length-1;i++){
+        arr[i] = arr[i]+"1";
+    }
+    return arr;
+}
+
+function showArray(arr){
+    for(let i = 0; i <= arr.length-1;i++){
+        document.write(" " + arr[i] + " ");
+    }
+}
+
+console.warn("a)");
+console.log(allValue0(arrTest));
+
+console.warn("b)");
+console.log(add1(arrTest2));
+
+console.warn("c)");
+showArray(arrTest2);
+
+document.write("<h3>Exercise 9</h3>");
+
