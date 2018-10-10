@@ -70,6 +70,14 @@ showArray(arrTest2);
 document.write("<h3>Exercise 8 and 9</h3>");
 
 function simulationDice(){
-    var dice1 = [];
-    var dice2 = [];
+    var arr = [];
+    
+    for(let i = 0; i <= 36000; i++){
+        var dice1 = parseInt(Math.random()*6+1);
+        var dice2 = parseInt(Math.random()*6+1);
+        arr.push(dice1 + dice2);
+    }
+
+    // WORKING
+
 }

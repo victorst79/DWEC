@@ -5,6 +5,6 @@ var width = parseInt(prompt("Width of the puzzle"));
 
 class puzzle{
     constructor(height, width){
-        this.height = parseInt(prompt);
+        
     }
 }
