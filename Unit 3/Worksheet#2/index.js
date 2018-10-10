@@ -67,5 +67,9 @@ console.log(add1(arrTest2));
 console.warn("c)");
 showArray(arrTest2);
 
-document.write("<h3>Exercise 9</h3>");
+document.write("<h3>Exercise 8 and 9</h3>");
 
+function simulationDice(){
+    var dice1 = [];
+    var dice2 = [];
+}
