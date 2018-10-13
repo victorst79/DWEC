@@ -17,7 +17,7 @@ class Puzzle{
             }            
         }
 
-        // GENERATE ARRAY WITH ALL NUMBER OF PARTS
+        // GENERATE ARRAY WITH ALL NUMBER OF PIECE
         for(let i = 0; i <= height-1; i++){
             for(let j = 0; j <= width-1; j++){
                 auxPuzz.push(puzz[i][j]);
@@ -30,7 +30,7 @@ class Puzzle{
             [auxPuzz[i], auxPuzz[j]] = [auxPuzz[j], auxPuzz[i]];
         }        
 
-        // RANDOMIZER PARTS OF PUZZLE      
+        // RANDOMIZER PIECE OF PUZZLE      
         var pos = 0;
         for(let i = 0; i <= height-1; i++){
             for(let j = 0; j <= width-1; j++){
@@ -38,9 +38,28 @@ class Puzzle{
                 pos++;
             }            
         }
-        return puzz;
+        this.board = puzz;
     }
 
+    // GETS
+    getBoard(){
+        return this.board;
+    }
+
+    getPosition(){
+        for(let i = 0; i <= this.height-1; i++){
+            for(let j = 0; j <= this.width-1; j++){
+                if(this.board[i][j] == 0){
+                    return "The empty piece is in line["+i+"] and column["+j+"]";
+                }
+            }            
+        }
+    }
+
+    // SETS
+    moveTokenUp(){
+
+    }
 }
 
 var height = parseInt(prompt("Height of the puzzle"));

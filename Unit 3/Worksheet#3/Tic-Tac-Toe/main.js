@@ -19,10 +19,12 @@ class Tictactoe{
 
     // SETS
     setBlackToken(line,column){
+        console.log(this.getBoard());
         return this.board[line][column] = "Black";
     }
 
     setWhiteToken(line,column){
+        console.log(this.getBoard());
         return this.board[line][column] = "White";
     }    
 }
