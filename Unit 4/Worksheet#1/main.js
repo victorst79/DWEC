@@ -43,7 +43,8 @@ function color(event) {
 }
 
 function deletColor(){
-    var square = document.getElementById("square");
+    var square = [...document.getElementsByTagName("td")];
+    square.map(element => {element.style.backgroundColor = "white";});    
 }
 
 draw();
