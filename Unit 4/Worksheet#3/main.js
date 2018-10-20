@@ -4,8 +4,10 @@ function validateName(){
 
     if(regName.test(name)){
         alert("Entra");
+
     }else{
         alert("No entra");
+
     }
 }
 
