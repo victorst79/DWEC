@@ -10,30 +10,30 @@
     <form action="#">
         <label>Name</label>
         <br>
-        <input type="text" id="name">
+        <input type="text" id="name" onkeypress="validateName();">
         <br>
         <label>Subname</label>
         <br>
-        <input type="text" id="subname">
+        <input type="text" id="subname" onkeyup="validateSubname();">
         <br>
         <label>Phone</label>
         <br>
-        <input type="text" id="phone">
+        <input type="text" id="phone" onkeyup="validatePhone();">
         <br>
         <label>DNI</label>
         <br>
-        <input type="text" id="dni">
+        <input type="text" id="dni" onkeyup="validateDni();">
         <br>
         <label>Email</label>
         <br>
-        <input type="email" id="email">
+        <input type="email" id="email" onkeyup="validatEmail();">
         <br>
         <label>Username</label>
         <br>
-        <input type="text" id="username">
+        <input type="text" id="username" onkeyup="validateUsername()">
         <br>
         <br>
-        <input type="submit" onclick="validateForm()">
+        <input type="submit" onclick="validateForm();" value='Send'>
     </form>
     <script src="./main.js"></script>
 </body>

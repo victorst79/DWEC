@@ -26,7 +26,7 @@ function validateSubname(){
 
 function validateUsername(){
     var username = document.getElementById("username").value;
-    var regName = new RegExp("[a-zA-Z0-9./*-]{8,}");
+    var regName = new RegExp("^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}$");
 
     if(regName.test(username)){
         document.getElementById('username').classList.remove("eror");
@@ -52,7 +52,7 @@ function validatePhone(){
 
 function validateDni(){
     var dni = document.getElementById("dni").value;
-    var regName = new RegExp("[0-9]{8}[A-Z]{1}");
+    var regName = new RegExp("^[0-9]{8}[A-Z]{1}$");
 
     if(regName.test(dni)){
         document.getElementById('dni').classList.remove("error");
@@ -86,25 +86,7 @@ function validateForm(){
     
 
     if(name.length > 0 && subname.length > 0 && dni.length > 0 && email.length > 0 && username.length > 0 && phone.length > 0){
-        
-        if(name){
-            validateName();
-        }
-        if(subname){
-            validateSubname();
-        }
-        if(phone){
-            validatePhone();
-        }
-        if(dni){
-            validateDni();
-        }
-        if(email){
-            validatEmail();
-        }
-        if(username){
-            validateUsername();
-        }
+        alert("Send correctly");
     }else{
         alert("Empty Fields");
     }
