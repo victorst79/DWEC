@@ -1,11 +1,25 @@
 function createCookie(){
     if(!document.cookie){
+        // USER NAME
         var userName = prompt("User Name");
+        // BACKGROUNDCOLOR
+        var bgColor = prompt("BackGroundColor");
+        // FONT-SIZE
+        var fontSize = prompt("FontSize");
+        // COOKIES
         setCookie("UserName",userName,5);
+        setCookie("BackGroundColor",bgColor,5);
+        setCookie("FontSize",fontSize,5);
     }else{
-        var cookie = getCookie(document.cookie);
-        var result = cookie.split("=");
-        alert("Welcome "+result[1]);
+        var name = getCookie("UserName");
+        var color = getCookie("BackGroundColor");
+        var font = getCookie("FontSize");
+        
+        console.log(color);
+        console.log(font);
+        alert("Welcome " + name);
+        document.getElementById("body").style.backgroundColor = color;
+        document.getElementById("body").style.fontSize = parseInt(font)+"px";
     }
 }
 
@@ -29,7 +43,17 @@ function getCookie(cname) {
             return c.substring(name.length, c.length);
         }
     }
-    return c;
+    return ca;
+}
+
+function deleteCookie(cname){
+    document.cookie = cname + "=;expires=Thu, 01 Jan 1970 00:00:01 GMT;path=/";
+}
+
+function deleteAllCookies(){
+    deleteCookie("UserName");
+    deleteCookie("BackGroundColor");
+    deleteCookie("FontSize");
 }
 
 document.onload = createCookie();
