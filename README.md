@@ -265,6 +265,14 @@ The geolocation API is published through the navigator.geolocation object. If th
 
 ## Worksheet#2
 
+You want to implement a web for the realization of puzzles. A puzzle is nothing more than a square board with a hole that we can move and that allows
+reorder the pieces. Therefore, the implementation of a class that represents this game is requested taking into account:
+- 1.The dimension can vary, be chosen in the creation.
+- 2.The blank space only moves up, down, left, right, controlling of course it is a valid movement.
+- 3.Must take control of the minimum time to solve it, as well as the number of movements made.
+- 4.The boards will be generated randomly.
+- 5.Implement a draw method () that will print on the screen to be able to be tested.
+
 ## Worksheet#2.1
 
 - Write examples with Arrays to solve the next problems using only Array methods (like iterators, etc...):
@@ -291,4 +299,54 @@ The geolocation API is published through the navigator.geolocation object. If th
 
     - k) replace some elements
 
-    - l) Over an array with names, find all entries whose firstname starts with 'J',  create projection combined of only the initials of the name and then sort alphabetically
+    - l) Over an array with names, find all entries whose firstname starts with 'J',  create projection combined of only the initials of the name and then sort alphabetically.
+
+## Worksheet#3
+
+- 5- Create a function called `paresImpares()` that creates an array of 100 random numbers from 1 to 1000. Once created, show the content and then organize it so that the odd and even elements are together. Then, show the array again
+
+- 7- Write the functions to carry out the following operations for a matrix of one
+dimension:
+    - a) Set the 10 elements of the array to zero.
+    - b) Add 1 to each of the elements of the array.
+    - c) Show the array values separated by spaces.
+
+- 8- Using a one-dimensional array, write a script to simulate the launch of two dice. The script must simulate the (random) release of both dice. The sum of the two values must be calculated below (the sum will therefore vary from 2 to 12, these being the least frequent values as well as the most frequent). Do a simulation with 36,000 launches and show the number of times each of the combinations appears.
+
+# Unit 4
+
+## Worksheet#1
+
+- 1.Capture the event in Mouse Click for each time an alert is executed.
+- 2.Capture the movement of the mouse, so that it shows the position in which
+is in every moment.
+- 3.Using the load event, shows the time elapsed since loading the page
+- 4.OnMouseMove and onLoad events. The users must be able to draw with our mouse. In two different colors. To do this we first simulate that we have a graphic canvas: it really is a table with small cells (100x100 may be worth). Your program will create that canvas once the page is loaded (onLoad). The next thing will be the movement of the mouse over the cells to paint them in a color, which will be red if the Ctrl key is pressed simultaneously and blue if you press Shift. Otherwise, nothing should be painted.
+- 5.Add the following features to the previous exercise:
+    
+    ◦ Boring lines with the mouse (by pressing the button that you decide)
+    
+    ◦Delete the canvas completely (with a button).
+
+- 6.Events onMouseOver and onMouseOut. We will create a page on which the user. You can find the color represented by a sequence in hexadecimal. For this, your page must show a title (it must be an image), a text explaining the purpose of your page and a table showing the 12 hexadecimal encodings of the main colors (for example, 0000FF is the blue color). Making use of the previous events you must provide the following functionality:
+
+    ◦When placing the pointer over the title, the color of the pointer must change (to another image that you decide). When leaving the title, it must return to its
+    original color
+    
+    ◦If the pointer is placed on any of the hexadecimal values, it must be color the entry with the color in HTML you are representing. By stopping be above that value, the name of the color should be displayed instead of the code. (For example, when placing me on # 0000FF, this entry is shown in blue,and when leaving automatically changes that value by the string "blue").
+
+## Worksheet#3
+
+Create a typical registration form for your website. It must contain at least fields to enter your name, surnames, ID, Phone, email and username. All fields are required, and you must validate as many of them as possible using regular expressions. The username must consist of at least 8 characters, among which must necessarily appear a number and some punctuation.
+
+As the focus of each input comes out, you must validate the content of it and show information to the user that indicates whether it is correct or not.
+
+## Worksheet#4
+
+- 1)Design a website that uses cookies to store the user's name. In this case, there is no cookie from that site, you must respond to the user's name and storage in a cookie that will expire in 5 minutes. Send this will greet the user through a message on the screen. If you have already created the cookie you must read and show the previous message directly. We should also provide a link to delete the cookie (what we might call 'Close Session').
+
+    Note: Make sure your cookie accepts all kinds of characters (such as ñ, white space, accents, etc ...)
+
+- 2)Improve the previous exercise and the user options so you can set the background color, paragraph and font size.
+
+- 3)How can we make the second cookie be automatically deleted when the browser is closed? Check it.
