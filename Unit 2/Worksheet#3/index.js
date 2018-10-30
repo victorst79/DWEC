@@ -72,6 +72,16 @@ encuentraPalabraMasLarga("Hello world , where is my dinner ?");
 
 document.write("<h4>D)</h4>");
 
+
+/**
+ * Receives a string and a number (mínimun size of word).
+ * After that, the split() method makes an array with our
+ * string with space as split.
+ * We made a for bucle to find which words are longer
+ * than the number.
+ * @param {*} cad_arg
+ * @param {*} i
+ */
 function fltraPalabrasMasLargas(cad_arg, i){
     var arr = cad_arg.split(" ");
     for(let j = 0; j <= arr.length-1; j++){
