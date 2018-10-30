@@ -95,6 +95,12 @@ fltraPalabrasMasLargas("Hello world , where is my dinner ?",2);
 
 document.write("<h4>E)</h4>");
 
+/**
+ * Receives a string, we do an array with it.
+ * After that me make a for bucle to make the 
+ * first letter a capital letter.
+ * @param {*} cad_arg
+ */
 function cadenaBienFormada(cad_arg){
     var arr = cad_arg;
     for(let i = 0; i <= arr.length-1; i++){
