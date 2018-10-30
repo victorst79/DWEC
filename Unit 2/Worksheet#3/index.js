@@ -22,6 +22,18 @@ invierteCadena("Hello world");
 
 document.write("<h4>B)</h4>");
 
+/**
+ * Receives a string, which is composed by diferent words.
+ * The array divide them using the space as the split,
+ * usgin split(" ").
+ * Once this is done, the array gets inverted by reverse()
+ * and later it becomes a string again. So the final reuslt is 
+ * car_rg backwards.
+ * 
+ * Ex: Getting "Hello World", the function will return 
+ * "World Hello"
+ * @param {*} cad_arg 
+ */
 function inviertePalabras(cad_arg){
     cad_arg = cad_arg.split(" ");
     for(let i = 0; i <= cad_arg.length-1; i++){
@@ -60,6 +72,16 @@ encuentraPalabraMasLarga("Hello world , where is my dinner ?");
 
 document.write("<h4>D)</h4>");
 
+
+/**
+ * Receives a string and a number (mínimun size of word).
+ * After that, the split() method makes an array with our
+ * string with space as split.
+ * We made a for bucle to find which words are longer
+ * than the number.
+ * @param {*} cad_arg
+ * @param {*} i
+ */
 function fltraPalabrasMasLargas(cad_arg, i){
     var arr = cad_arg.split(" ");
     for(let j = 0; j <= arr.length-1; j++){
@@ -73,6 +95,15 @@ fltraPalabrasMasLargas("Hello world , where is my dinner ?",2);
 
 document.write("<h4>E)</h4>");
 
+/**
+ * Receives a string, we do an array with it.
+ * After that me make a for bucle to make the 
+ * first letter a capital letter.
+ * 
+ * Ex: Gettin "hello world", the function will return
+ * "Hello world".
+ * @param {*} cad_arg
+ */
 function cadenaBienFormada(cad_arg){
     var arr = cad_arg;
     for(let i = 0; i <= arr.length-1; i++){
@@ -88,6 +119,12 @@ cadenaBienFormada("hello world");
 
 document.write("<h3>Exercise 2</h3>");
 
+/**
+ * Receives a character, if the character
+ * is an upper case return true,
+ * else return false.
+ * @param {*} character
+ */
 function upper(character){
     if(character == character.toUpperCase()){
         return true;
@@ -96,6 +133,12 @@ function upper(character){
     }
 }
 
+/**
+ * Receives a character, if the character
+ * is a lower caser return true,
+ * else return false.
+ * @param {*} character
+ */
 function lower(character){
     if(character == character.toLowerCase()){
         return true;
