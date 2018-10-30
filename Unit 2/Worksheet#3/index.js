@@ -22,6 +22,18 @@ invierteCadena("Hello world");
 
 document.write("<h4>B)</h4>");
 
+/**
+ * Receives a string, which is composed by diferent words.
+ * The array divide them using the space as the split,
+ * usgin split(" ").
+ * Once this is done, the array gets inverted by reverse()
+ * and later it becomes a string again. So the final reuslt is 
+ * car_rg backwards.
+ * 
+ * Ex: Getting "Hello World", the function will return 
+ * "World Hello"
+ * @param {*} cad_arg 
+ */
 function inviertePalabras(cad_arg){
     cad_arg = cad_arg.split(" ");
     for(let i = 0; i <= cad_arg.length-1; i++){
