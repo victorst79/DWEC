@@ -99,6 +99,9 @@ document.write("<h4>E)</h4>");
  * Receives a string, we do an array with it.
  * After that me make a for bucle to make the 
  * first letter a capital letter.
+ * 
+ * Ex: Gettin "hello world", the function will return
+ * "Hello world".
  * @param {*} cad_arg
  */
 function cadenaBienFormada(cad_arg){
@@ -116,6 +119,12 @@ cadenaBienFormada("hello world");
 
 document.write("<h3>Exercise 2</h3>");
 
+/**
+ * Receives a character, if the character
+ * is a capital letter return true,
+ * else return false.
+ * @param {*} character
+ */
 function upper(character){
     if(character == character.toUpperCase()){
         return true;
