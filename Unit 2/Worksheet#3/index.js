@@ -121,7 +121,7 @@ document.write("<h3>Exercise 2</h3>");
 
 /**
  * Receives a character, if the character
- * is a capital letter return true,
+ * is an upper case return true,
  * else return false.
  * @param {*} character
  */
@@ -133,6 +133,12 @@ function upper(character){
     }
 }
 
+/**
+ * Receives a character, if the character
+ * is a lower caser return true,
+ * else return false.
+ * @param {*} character
+ */
 function lower(character){
     if(character == character.toLowerCase()){
         return true;
