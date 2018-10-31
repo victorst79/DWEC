@@ -4,26 +4,28 @@
     <meta charset="UTF-8">
     <title>TicTacToe - Modules JS</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" type="module"></script>  
 </head>
 <body>
     <h1>TicTacToe</h1>
-    <table>
-        <tr>
-            <td id="" onclick="">1</td>
-            <td id="" onclick="">2</td>
-            <td id="" onclick="">3</td>
-        </tr>
-        <tr>
-            <td id="" onclick="">1</td>
-            <td id="" onclick="">2</td>
-            <td id="" onclick="">3</td>
-        </tr>
-        <tr>
-            <td id="" onclick="">1</td>
-            <td id="" onclick="">2</td>
-            <td id="" onclick="">3</td>
-        </tr>    
-    </table>
-    <script src="./tictactoe.js" type="module"></script>
+    <div id="canvas">
+        <table>
+            <tr>
+                <td id="00" onclick="play(0,0)"></td>
+                <td id="01" onclick=""></td>
+                <td id="02" onclick=""></td>
+            </tr>
+            <tr>
+                <td id="10" onclick=""></td>
+                <td id="11" onclick=""></td>
+                <td id="12" onclick=""></td>
+            </tr>
+            <tr>
+                <td id="20" onclick=""></td>
+                <td id="21" onclick=""></td>
+                <td id="22" onclick=""></td>
+            </tr>    
+        </table>
+    </div> 
 </body>
 </html>

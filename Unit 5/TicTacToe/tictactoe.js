@@ -1,4 +1,4 @@
-class Tictactoe{
+export class Tictactoe{
     /**
     * The constructor generates a bidimensional array with 3x3 positions, which simulates the logic of a game board.
     */

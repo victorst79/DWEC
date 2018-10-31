@@ -1,3 +1,13 @@
+div#canvas{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+h1{
+    text-align: center;
+}
+
 table,tr,td{
     border: solid 2px black;
     border-collapse: collapse;
