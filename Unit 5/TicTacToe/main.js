@@ -1,17 +1,7 @@
 import {Tictactoe} from './tictactoe.js';
 
 var board = new Tictactoe();
-// console.log(board.getBoard()[0][0]);
-
-// function play(line,column){
-//     if(board.getBoard()[line][column] == "Empty"){
-//         console.log("CHANGE");
-//     }else{
-//         console.log("NOT EMPTY");
-//     }
-// }
-
-// document.getElementById("01").onclick = play(0,1);
+var turn = true;
 
 function play(){
     var celdas = [...document.getElementsByTagName("td")]
@@ -19,7 +9,18 @@ function play(){
 }
 
 function evento(event){
-    board.setBlackToken(event.target.id[0],event.target.id[1]);
+    if(board.getBoard()[event.target.id[0]][event.target.id[1]] == "Empty"){
+        if(turn == true){
+            board.setBlackToken(event.target.id[0],event.target.id[1]);
+            turn = false;
+        }else if(turn == false){
+            board.setWhiteToken(event.target.id[0],event.target.id[1]);
+            turn = true;
+        }
+    }else{
+        alert("Field not empty");
+    }
+    
 }
 
 play();
