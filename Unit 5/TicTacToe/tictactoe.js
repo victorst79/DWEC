@@ -37,9 +37,9 @@ export class Tictactoe{
     * @param {Number} line
     * @param {Number} column
     */
-    setBlackToken(line,column){
+    setCrossToken(line,column){
         console.log(this.getBoard());
-        return this.board[line][column] = "Black";
+        return this.board[line][column] = "Cross";
     }
 
     /**
@@ -51,8 +51,59 @@ export class Tictactoe{
     * @param {Number} line
     * @param {Number} column
     */
-    setWhiteToken(line,column){
+    setCircleToken(line,column){
         console.log(this.getBoard());
-        return this.board[line][column] = "White";
+        return this.board[line][column] = "Circle";
+    }
+
+    /**
+    * This method checks the possible solutions in the game to check
+    * who wins and returns a boolean value following this pattern:
+    * 
+    * Cross: `true`
+    * Circle: `false`
+    * 
+    * @return {Boolean} Boolean
+    */
+    check(){
+        // CHECK CROSS
+        if(this.board[0][0] == "Cross" && this.board[0][1] == "Cross" && this.board[0][2] == "Cross"){
+            return true;
+        }
+        if(this.board[1][0] == "Cross" && this.board[1][1] == "Cross" && this.board[1][2] == "Cross"){
+            return true;
+        }
+        if(this.board[2][0] == "Cross" && this.board[2][1] == "Cross" && this.board[2][2] == "Cross"){
+            return true;
+        }
+        if(this.board[0][0] == "Cross" && this.board[1][0] == "Cross" && this.board[2][0] == "Cross"){
+            return true;
+        }
+        if(this.board[0][1] == "Cross" && this.board[1][1] == "Cross" && this.board[2][1] == "Cross"){
+            return true;
+        }
+        if(this.board[0][2] == "Cross" && this.board[1][2] == "Cross" && this.board[2][2] == "Cross"){
+            return true;
+        }
+
+        // CHECK CIRCLE
+        if(this.board[0][0] == "Circle" && this.board[0][1] == "Circle" && this.board[0][2] == "Circle"){
+            return false;
+        }
+        if(this.board[1][0] == "Circle" && this.board[1][1] == "Circle" && this.board[1][2] == "Circle"){
+            return false;
+        }
+        if(this.board[2][0] == "Circle" && this.board[2][1] == "Circle" && this.board[2][2] == "Circle"){
+            return false;
+        }
+        if(this.board[0][0] == "Circle" && this.board[1][0] == "Circle" && this.board[2][0] == "Circle"){
+            return false;
+        }
+        if(this.board[0][1] == "Circle" && this.board[1][1] == "Circle" && this.board[2][1] == "Circle"){
+            return false;
+        }
+        if(this.board[0][2] == "Circle" && this.board[1][2] == "Circle" && this.board[2][2] == "Circle"){
+            return false;
+        }
     }
 }
