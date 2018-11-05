@@ -10,8 +10,8 @@ h1{
 
 #gametable{
     border: solid 1px black;
-    width: 50rem;
-    height: 25rem;
+    width: 800px;
+    height: 400px;
 }
 
 #ball{
