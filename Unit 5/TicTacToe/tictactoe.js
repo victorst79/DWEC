@@ -61,6 +61,7 @@ export class Tictactoe{
     * who wins and returns a boolean value following this pattern:
     * 
     * Cross: `true`
+    * 
     * Circle: `false`
     * 
     * @return {Boolean} Boolean
