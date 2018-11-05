@@ -1,0 +1,19 @@
+h1{
+    text-align: center;
+}
+
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#gametable{
+    border: solid 1px black;
+    width: 50rem;
+    height: 25rem;
+}
+
+#ball{
+    border: solid 1.5px red;
+}
