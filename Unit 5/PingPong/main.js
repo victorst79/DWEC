@@ -1,6 +1,13 @@
 // Randomizer initial position
-document.getElementById("ball").setAttribute("cx",parseInt(Math.random()*760)+20);
-document.getElementById("ball").setAttribute("cy",parseInt(Math.random()*360)+20);
+document.getElementById("ball").setAttribute("cx",parseInt(Math.random()*740)+20);
+document.getElementById("ball").setAttribute("cy",parseInt(Math.random()*340)+20);
+
+// Position Players
+document.getElementById("player1").setAttribute("x",50);
+document.getElementById("player1").setAttribute("y",125);
+
+document.getElementById("player2").setAttribute("x",740);
+document.getElementById("player2").setAttribute("y",125);
 
 var ball = document.getElementById("ball");
 var gametable = document.getElementById("gametable");
@@ -29,6 +36,10 @@ function positionY(){
         speedY = Math.abs(speedY);
     }
     ball.setAttribute("cy", y + speedY);
+}
+
+function player1(){
+    
 }
 
 setInterval( () => {
