@@ -16,8 +16,8 @@ function drawChart() {
     data.addRows([
     ['PP', 137],
     ['PSOE', 85],
-    ['Podemos', 45],
-    ['Ciudadanos', 32],
+    ['Ciudadanos', 45],
+    ['Podemos', 32],
     ['Others', 39]
     ]);
     
@@ -28,30 +28,33 @@ function drawChart() {
 
     // Instantiate and draw our chart, passing in some options.
     var chart = new google.visualization.PieChart(document.getElementById('chart_div1'));
-    chart.draw(data, options);
+    chart.draw(data, options);    
 
-    // Create the data table Table Charts
     var data2 = google.visualization.arrayToDataTable([
-        ['City', '2010 Population',],
-        ['New York City, NY', 8175000],
-        ['Los Angeles, CA', 3792000],
-        ['Chicago, IL', 2695000],
-        ['Houston, TX', 2099000],
-        ['Philadelphia, PA', 1526000]
-      ]);
+            ['Political party', 'Bench'],
+            ['PP', 137],
+            ['PSOE', 85],
+            ['Podemos', 45],
+            ['Ciudadanos', 32],
+            ['Others', 39]
+        ]);
 
-    var options = {
-        title: 'Population of Largest U.S. Cities',
+      var options2 = {
+        title: 'Votes to the Congress of the Deputies',
         chartArea: {width: '50%'},
         hAxis: {
-          title: 'Total Population',
+          title: 'Total Votes',
           minValue: 0
         },
         vAxis: {
-          title: 'City'
+          title: 'Elections 2016'
         }
+      };
+
+      var chart = new google.visualization.BarChart(document.getElementById('chart_div2'));
+
+      chart.draw(data2, options2);
     }
 
-    var chart2 = new google.visualization.PieChart(document.getElementById('chart_div2'));
-    chart.draw(data2, options);
-}
+
+    setTimeout();
