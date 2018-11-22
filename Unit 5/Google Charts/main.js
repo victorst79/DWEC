@@ -11,8 +11,8 @@ function drawChart() {
   
     // Create the data table PieChart
     var data = new google.visualization.DataTable();
-    data.addColumn('string', 'Topping');
-    data.addColumn('number', 'Slices');
+    data.addColumn('string', 'Political Party');
+    data.addColumn('number', 'Bench');
     data.addRows([
     ['PP', 137],
     ['PSOE', 85],
@@ -52,9 +52,35 @@ function drawChart() {
       };
 
       var chart = new google.visualization.BarChart(document.getElementById('chart_div2'));
-
       chart.draw(data2, options2);
+
+        // MAP
+        google.charts.load('current', {
+            'packages':['geochart'],
+            // Note: you will need to get a mapsApiKey for your project.
+            // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
+            'mapsApiKey': 'AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
+          });
+          google.charts.setOnLoadCallback(drawRegionsMap);
+    
+          function drawRegionsMap() {
+            var data3 = google.visualization.arrayToDataTable([
+            ['Country', 'Millions of Turist'],
+            ['France', 82.6],
+            ['United States', 75.6],
+            ['España', 75.6],
+            ['China', 59.3],
+            ['Italy', 52.4],
+            ['United Kingdom', 35.8],
+            ['Germany', 35.6],
+            ['Mexico', 35]
+            ]);
+    
+            var options3 = {};
+    
+            var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+    
+            chart.draw(data3, options3);
+    
     }
-
-
-    setTimeout();
+}
