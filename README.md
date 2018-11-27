@@ -350,3 +350,13 @@ As the focus of each input comes out, you must validate the content of it and sh
 - 2)Improve the previous exercise and the user options so you can set the background color, paragraph and font size.
 
 - 3)How can we make the second cookie be automatically deleted when the browser is closed? Check it.
+
+# Unit 6
+
+## Worksheet#1
+
+- 5)Create a website that works like an email client. For this we suppose that in your server you have a script that as you receive an email, it is written in an XML file. So:
+    - Define the XML file format that allows you to simulate this situation (emails
+electronic).
+    - Create the web with the necessary interface so that it periodically updates the list of
+post
