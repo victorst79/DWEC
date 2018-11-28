@@ -1,6 +1,20 @@
-<mail>
-    <to>Tove</to>
-    <from>Jani</from>
-    <heading>Reminder</heading>
-    <body>Don't forget me this weekend!</body>
-</mail>
+<mails>
+    <mail>
+        <to>Tove</to>
+        <from>Jani</from>
+        <heading>Reminder</heading>
+        <body>Don't forget me this weekend!</body>
+    </mail>
+    <mail>
+        <to>Juan</to>
+        <from>Pepe</from>
+        <heading>Remember</heading>
+        <body>Don't forget me this weekend!</body>
+    </mail>
+    <mail>
+        <to>Paco</to>
+        <from>Manolo</from>
+        <heading>Reminder</heading>
+        <body>Don't forget me this weekend!</body>
+    </mail>
+</mails>
