@@ -17,4 +17,10 @@
         <heading>Reminder</heading>
         <body>Don't forget me this weekend!</body>
     </mail>
+    <mail>
+        <to>Juan</to>
+        <from>Manolo</from>
+        <heading>Reminder</heading>
+        <body>Don't forget me this weekend!</body>
+    </mail>
 </mails>
