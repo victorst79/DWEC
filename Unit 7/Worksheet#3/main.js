@@ -1,13 +1,21 @@
-$("document").ready( () => {
-
-    for(let i = 0; i <= $("tr").children("td").length;i++){
-        
-        if(i <= 2){
-            $("tr:nth-child("+ i +")").css("background-color","cyan");
-        }else if(i > 2){
-            $("tr:nth-child("+ i +")").css("background-color","red");
-        }
-    }
-
+$("document").ready( function(){
+    // 1
+    $("#primero td:gt(1)").css("background-color","red");
+    $("#primero td:lt(2)").css("background-color","cyan");
     
+    // 3
+    $("#tercero td:empty").css("background-color","yellow")
+
+    // 7
+    $("button#start").click(function(){
+        $("#ani1").animate({left: "200px"}, "slow");
+        $("#ani2");
+        $("#ani3");
+    });
+
+    $("button#stop").click(function(){
+        $("#ani1").stop();
+        $("#ani2").stop();
+        $("#ani3").stop();
+    });
 });

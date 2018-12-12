@@ -6,11 +6,11 @@ $("document").ready( () => {
     
     // Exercise 8
     // a
-    $("div h3").css("font-size","15px");
+    // $("div h3").css("font-size","15px");
     
-    // $("div h3").animate( () => {
-    //     fontsize: "15px";
-    // },2000);
+    $("div h3").animate( {
+        fontSize: "2em"
+    },"slow");
 
     // b
     $("div h3").click( function(){
