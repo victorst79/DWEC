@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task Organizer</title>
+</head>
+<body>
+    <main id="task-notes">
+        <h3>New Task</h3>
+        <input v-model="newTask" placeholder="New Task">
+        <input type="button" v-on:click="newNote" value="New Note">
+        <ul>
+            <li v-for="note in notes">
+                <div>
+                    <h4>Task: {{ note.task }}</h4>
+                    <p>Priority: {{ note.priority }}</p>
+                    <p>Date: {{ note.date_creation }}</p>
+                    <p>Complete: {{ note.complete }}</p>
+                </div>
+            </li>
+        </ul>        
+    </main>
+
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
