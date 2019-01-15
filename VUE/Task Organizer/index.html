@@ -12,7 +12,8 @@
         <input v-model="newTask" placeholder="New Task">
         <input type="button" v-on:click="newNote" value="New Note">
         <h4>You have {{ notes.length }} notes</h4>
-        <h4 v-for="note in countNotes(notes)">You have {{ note }} pending tasks</h4>
+        <!-- <h4 v-for="note in countNotes(notes)">You have {{ note }} pending tasks</h4> -->
+        <h4>You have {{ countNotes(notes) }} pending tasks</h4>
         <ul>
             <li v-for="note in notes">
                 <div>

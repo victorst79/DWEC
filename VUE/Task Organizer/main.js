@@ -43,7 +43,6 @@ var notes = new Vue({
                     result++;
                 }
             }
-            console.log(result);
             return result;
         }
     }
