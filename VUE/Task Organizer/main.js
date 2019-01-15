@@ -6,7 +6,7 @@ var notes = new Vue({
                 task: "Sort desk",
                 priority: 3,
                 date_creation: new Date().toLocaleString(),
-                complete: false
+                complete: true
             },
             {
                 task: "Update repositories",
@@ -33,6 +33,18 @@ var notes = new Vue({
             var complete = false;
 
             this.notes.push({task,priority,date_creation,complete});
+            console.log(this.notes.length);
+        },
+
+        countNotes: function(notes){
+            var result = 0;
+            for(let i = 0; i < notes.length; i++){
+                if(notes[i].complete == false){
+                    result++;
+                }
+            }
+            console.log(result);
+            return result;
         }
     }
 });
