@@ -27,8 +27,7 @@ var notes = new Vue({
             }
         ],
         newTask: "",
-        completed: "",
-        incomplete: ""
+        state: []
     },
     methods: {
         newNote: function(){
@@ -56,7 +55,10 @@ var notes = new Vue({
     },
     computed: {
         notesFilter: function(){
-
+            var self = this;
+            return self.notes.filter(function(state){
+                return self.notes.indexOf(state);
+            });
         }
     }
 });
