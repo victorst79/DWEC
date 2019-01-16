@@ -1,3 +1,8 @@
+Vue.component("todo", {
+    template: "#note",
+    props: ["name"]
+});
+
 var notes = new Vue({
     el: '#task-notes',
     data: {
@@ -21,19 +26,18 @@ var notes = new Vue({
                 complete: false
             }
         ],
-        newTask: ""
+        newTask: "",
+        completed: "",
+        incomplete: ""
     },
     methods: {
         newNote: function(){
-            console.log(this.newTask);
-
             var task = this.newTask;
             var priority = parseInt((Math.random() * 3 ) + 1);
             var date_creation = new Date().toLocaleString();
             var complete = false;
 
             this.notes.push({task,priority,date_creation,complete});
-            console.log(this.notes.length);
         },
 
         countNotes: function(notes){
@@ -44,6 +48,15 @@ var notes = new Vue({
                 }
             }
             return result;
+        },
+
+        filter: function(){
+            
+        }
+    },
+    computed: {
+        notesFilter: function(){
+
         }
     }
 });

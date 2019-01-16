@@ -12,8 +12,11 @@
         <input v-model="newTask" placeholder="New Task">
         <input type="button" v-on:click="newNote" value="New Note">
         <h4>You have {{ notes.length }} notes</h4>
-        <!-- <h4 v-for="note in countNotes(notes)">You have {{ note }} pending tasks</h4> -->
         <h4>You have {{ countNotes(notes) }} pending tasks</h4>
+        <input type="checkbox" id="filter" v-model="completed" v-on:click="filter">
+            <label for="checkbox">Complete</label>
+        <input type="checkbox" id="filter" v-model="incomplete" checked>
+            <label for="checkbox">Incomplete</label>
         <ul>
             <li v-for="note in notes">
                 <div>
@@ -23,9 +26,16 @@
                     <p>Complete: {{ note.complete }}</p>
                 </div>
             </li>
-        </ul>        
+        </ul>
+        <todo name="Victor"></todo>  
     </main>
 
+    <template id="note">       
+        <div>
+            <h4>This is a template</h4>
+            <p>Hello {{name}}</p>
+        </div>
+    </template>
     <!-- development version, includes helpful console warnings -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="./main.js"></script>
