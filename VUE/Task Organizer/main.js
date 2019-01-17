@@ -11,19 +11,19 @@ var notes = new Vue({
                 task: "Sort desk",
                 priority: 3,
                 date_creation: new Date().toLocaleString(),
-                state: true
+                state: "complete"
             },
             {
                 task: "Update repositories",
                 priority: 1,
                 date_creation: new Date().toLocaleString(),
-                state: false
+                state: "complete"
             },
             {
                 task: "Modify keywords",
                 priority: 2,
                 date_creation: new Date().toLocaleString(),
-                state: false
+                state: "incomplete"
             }
         ],
         newTask: "",
@@ -34,7 +34,7 @@ var notes = new Vue({
             var task = this.newTask;
             var priority = parseInt((Math.random() * 3 ) + 1);
             var date_creation = new Date().toLocaleString();
-            var state = false;
+            var state = "incomplete";
 
             this.notes.push({task,priority,date_creation,state});
         },
@@ -42,15 +42,11 @@ var notes = new Vue({
         countNotes: function(notes){
             var result = 0;
             for(let i = 0; i < notes.length; i++){
-                if(notes[i].state == false){
+                if(notes[i].state == "incomplete"){
                     result++;
                 }
             }
             return result;
-        },
-
-        filter: function(){
-            
         }
     },
     computed: {
