@@ -13,9 +13,9 @@
         <input type="button" v-on:click="newNote" value="New Note">
         <h4>You have {{ notes.length }} notes</h4>
         <h4>You have {{ countNotes(notes) }} pending tasks</h4>
-        <input type="checkbox" id="complete" value="complete" v-model="state">
+        <input type="checkbox" id="complete" value="complete" v-model="stateTask">
             <label for="checkbox">Complete</label>
-        <input type="checkbox" id="incomplete" value="incomplete" v-model="state">
+        <input type="checkbox" id="incomplete" value="incomplete" v-model="stateTask">
             <label for="checkbox">Incomplete</label>
         <ul>
             <li v-for="note in notesFilter">
@@ -23,7 +23,7 @@
                     <h4>Task: {{ note.task }}</h4>
                     <p>Priority: {{ note.priority }}</p>
                     <p>Date: {{ note.date_creation }}</p>
-                    <p>Complete: {{ note.complete }}</p>
+                    <p>Complete: {{ note.state }}</p>
                 </div>
             </li>
         </ul>

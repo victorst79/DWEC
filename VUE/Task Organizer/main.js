@@ -11,38 +11,38 @@ var notes = new Vue({
                 task: "Sort desk",
                 priority: 3,
                 date_creation: new Date().toLocaleString(),
-                complete: true
+                state: true
             },
             {
                 task: "Update repositories",
                 priority: 1,
                 date_creation: new Date().toLocaleString(),
-                complete: false
+                state: false
             },
             {
                 task: "Modify keywords",
                 priority: 2,
                 date_creation: new Date().toLocaleString(),
-                complete: false
+                state: false
             }
         ],
         newTask: "",
-        state: []
+        stateTask: []
     },
     methods: {
         newNote: function(){
             var task = this.newTask;
             var priority = parseInt((Math.random() * 3 ) + 1);
             var date_creation = new Date().toLocaleString();
-            var complete = false;
+            var state = false;
 
-            this.notes.push({task,priority,date_creation,complete});
+            this.notes.push({task,priority,date_creation,state});
         },
 
         countNotes: function(notes){
             var result = 0;
             for(let i = 0; i < notes.length; i++){
-                if(notes[i].complete == false){
+                if(notes[i].state == false){
                     result++;
                 }
             }
@@ -56,8 +56,9 @@ var notes = new Vue({
     computed: {
         notesFilter: function(){
             var self = this;
-            return self.notes.filter(function(state){
-                return self.notes.indexOf(state);
+            return self.notes.filter(function(note){
+                console.log(self.stateTask);
+                return note.state == self.stateTask;
             });
         }
     }
