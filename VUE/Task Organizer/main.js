@@ -54,7 +54,7 @@ var notes = new Vue({
             var self = this;
             return self.notes.filter(function(note){
                 console.log(self.stateTask);
-                return note.state == self.stateTask;
+                return note.state == self.stateTask[0] || note.state == self.stateTask[1];
             });
         }
     }
