@@ -8,6 +8,7 @@
 </head>
 <body>
     <main id="task-notes">
+        <todo name="Victor"></todo>
         <h3>New Task</h3>
         <input v-model="newTask" placeholder="New Task">
         <input type="button" v-on:click="newNote" value="New Note">
@@ -26,14 +27,12 @@
                     <p>Complete: {{ note.state }}</p>
                 </div>
             </li>
-        </ul>
-        <todo name="Victor"></todo>  
+        </ul>  
     </main>
 
     <template id="note">       
         <div>
-            <h4>This is a template</h4>
-            <p>Hello {{name}}</p>
+            <h4>Welcome {{name}}</h4>
         </div>
     </template>
     <!-- development version, includes helpful console warnings -->
