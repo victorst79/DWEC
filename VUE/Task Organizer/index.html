@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Task Organizer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 </head>
 <body>
     <main id="task-notes">
@@ -27,8 +28,22 @@
                     <p>Complete: {{ note.state }}</p>
                 </div>
             </li>
-        </ul>  
+        </ul>
     </main>
+    <div id="animations">
+        <button v-on:click="show = !show">
+          Animation
+        </button>
+        <transition enter-active-class="animated fadeIn" leave-active-class="animated fadeOut" mode="out-in">
+          <p v-if="show">This is a animation</p>
+        </transition>
+        <transition enter-active-class="animated heartBeat" leave-active-class="animated heartBeat" >
+            <p v-if="show">This is a animation 2</p>
+        </transition>
+        <transition enter-active-class="animated rollIn" leave-active-class="animated rollOut" mode="in-out">
+            <p v-if="show">This is a animation 3</p>
+        </transition>
+    </div>
     <!-- TEMPLATES -->
     <template id="note">       
         <div>
@@ -37,6 +52,6 @@
     </template>
     <!-- development version, includes helpful console warnings -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="./main.js"></script>
+    <script src="./main.vue"></script>
 </body>
 </html>
