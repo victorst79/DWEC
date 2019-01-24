@@ -1,8 +1,13 @@
+// COMPONENTS
 Vue.component("todo", {
     template: "#note",
     props: ["name"]
 });
 
+// ROUTES
+
+
+// APPS
 var notes = new Vue({
     el: '#task-notes',
     data: {
@@ -53,9 +58,16 @@ var notes = new Vue({
         notesFilter: function(){
             var self = this;
             return self.notes.filter(function(note){
-                console.log(self.stateTask);
                 return note.state == self.stateTask[0] || note.state == self.stateTask[1];
             });
         }
+    }
+});
+
+// APP ANIMATIONS
+var animations = new Vue({
+    el: '#animations',
+    data: {
+        show: true
     }
 });
