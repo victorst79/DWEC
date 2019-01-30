@@ -6,13 +6,22 @@ app.get('/', function(req, res){
     res.sendFile(__dirname + '/public/index.html');
 });
 
+// SOCKET.IO
 io.on('connection', function(socket){
-    console.log('a user connected');
     
-    socket.on('chat message', function(msg){
-        console.log('message: ' + msg);
-        io.emit('chat message', msg);
-    });;
+    socket.on('nick',function(nick){
+        // console.log("user connected: "+nick);
+        socket.broadcast.emit('nick',nick);
+
+        socket.on('chat message', function(msg){
+            // console.log('message: ' + msg);
+            io.emit('chat message', chatResponse = { 
+                    nick: nick,
+                    msg: msg
+                }               
+            );
+        });;
+    });        
 
     // DISCONNECTED
     socket.on('disconnect', function(){
