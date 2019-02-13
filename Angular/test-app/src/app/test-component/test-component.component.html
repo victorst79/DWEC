@@ -1,3 +1,20 @@
-<p>
-  test-component works!
-</p>
+<div>
+    <h1 [ngClass]="title">TEST COMPONENT</h1>
+    <ul>
+        <li *ngFor="let todo of todos">
+            {{todo}}
+        </li>
+    </ul>
+    <input type="text" [(ngModel)]="testLabel">
+    <br>
+    <label>{{testLabel}}</label>
+    <br>
+    <button (click)="testFunction()">Test my function in angular</button>
+    <br>
+    <div [ngSwitch]="testSwitch">
+        <p *ngSwitchCase="1">{{testSwitch}}</p>
+        <p *ngSwitchCase="2">{{testSwitch}}</p>
+        <p *ngSwitchDefault>off</p>
+    </div>
+</div>
+
