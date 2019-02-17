@@ -1,0 +1,11 @@
+<section>
+  <h1>API BOOKS</h1>
+  <div *ngFor="let book of books">
+    <h3>Tittle: {{book.Title}}</h3>
+    <h4>Description</h4>
+    <p>{{book.Description}}</p>
+    <small>Page count: {{book.PageCount}}</small>
+    <p><b>Publish Date:</b> {{book.PublishDate}}</p>
+    <hr>
+  </div>
+</section>

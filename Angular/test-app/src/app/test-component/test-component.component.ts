@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-test-component',
@@ -12,11 +11,7 @@ export class TestComponentComponent implements OnInit {
   public title = 'title';
   public testSwitch = 1;
 
-  constructor(private http: HttpClient) { 
-    this.http.get('https://fakerestapi.azurewebsites.net/api/Books').subscribe(data => {
-      console.log(data);
-    });
-  }
+  constructor() { }
 
   ngOnInit() {
   }
@@ -24,4 +19,6 @@ export class TestComponentComponent implements OnInit {
   testFunction() {
     alert('WORKING');
   }
+
+  
 }
