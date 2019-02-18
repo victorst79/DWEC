@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DatosService } from '../datos.service';
 
 @Component({
   selector: 'app-test-component',
@@ -11,7 +12,11 @@ export class TestComponentComponent implements OnInit {
   public title = 'title';
   public testSwitch = 1;
 
-  constructor() { }
+  public users = [];
+  constructor(private servicioDatos: DatosService) { 
+
+    this.users = servicioDatos.getData();
+  }
 
   ngOnInit() {
   }
@@ -20,5 +25,4 @@ export class TestComponentComponent implements OnInit {
     alert('WORKING');
   }
 
-  
 }
