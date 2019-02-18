@@ -13,10 +13,7 @@ export class TestComponentComponent implements OnInit {
   public testSwitch = 1;
 
   public users = [];
-  constructor(private servicioDatos: DatosService) { 
-
-    this.users = servicioDatos.getData();
-  }
+  constructor() { }
 
   ngOnInit() {
   }

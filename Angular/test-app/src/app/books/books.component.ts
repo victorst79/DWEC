@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { DatosService } from '../datos.service';
 
 @Component({
   selector: 'app-books',
@@ -9,10 +9,8 @@ import { HttpClient } from '@angular/common/http';
 export class BooksComponent implements OnInit {
   public books;
 
-  constructor(private http: HttpClient) { 
-    this.http.get('https://fakerestapi.azurewebsites.net/api/Books').subscribe(data => {
-      this.books = data;
-    });
+  constructor(private api: DatosService) { 
+    this.books = api.getBooks();  
   }
 
   ngOnInit() {
