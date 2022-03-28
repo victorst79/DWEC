@@ -24,6 +24,16 @@ function addOnlyNums(...arguments){
             alert("Invalid character");
         }
     }
+//     another solution 
+    let arr1 = [1,"2",3,"4",5,6]
+const addOnlyNums = (nums)=>{
+  for(num of nums){
+    Number(num);
+    return nums.reduce((a,b) =>Number(a) + Number(b));
+    
+  }
+}
+    
     document.write("<p>" + sum + "</p>");
 }
 
